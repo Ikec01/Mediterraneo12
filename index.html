@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediterraneo | Premium Mediterranean Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/index.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                <span class="logo-text">Mediterraneo</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Početna</a></li>
+                <li class="nav-item"><a href="about.html"><i class="fas fa-info-circle"></i> O nama</a></li>
+                <li class="nav-item"><a href="menu.html"><i class="fas fa-utensils"></i> Meni</a></li>
+                <li class="nav-item"><a href="contact.html"><i class="fas fa-envelope"></i> Kontakt</a></li>
+                <li class="nav-item"><a href="author.html"><i class="fas fa-user"></i> Autor</a></li>
+                <li class="nav-item"><a href="downloads/Mediterraneo1.zip" download><i class="fa-solid fa-download"></i> Zip</a></li>
+                <li class="nav-item"><a href="downloads/dokumentacija.pdf" download><i class="fa-solid fa-download"></i> Doc</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="contact.html#reservation" class="btn btn-primary">Rezervišite</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Autentični Mediteranski Ukusi</h1>
+            <p class="hero-subtitle">Sveže namirnice • Tradicionalni recepti • Vrhunski ambijent</p>
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn btn-primary btn-large">Pogledajte Meni</a>
+                <a href="contact.html#reservation" class="btn btn-secondary btn-large">Rezervacija</a>
+            </div>
+        </div>
+    </section>
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Doživite Mediteran</h2>
+                <p class="section-subtitle">Naša filozofija je jednostavna - kvalitet, svežina i autentičnost</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="about-card-title">Sveže Namirnice</h3>
+                    <p class="about-card-text">Radimo isključivo sa lokalnim proizvođačima i dnevno svežim namirnicama.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <h3 class="about-card-title">Tradicionalni Recepti</h3>
+                    <p class="about-card-text">Naša jela pripremamo po tradicionalnim mediteranskim receptima.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <h3 class="about-card-title">Odabir Vina</h3>
+                    <p class="about-card-text">Posedujemo vinsku kartu sa preko 50 vrsta vina iz cele mediteranske regije.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section specialties-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Naši Specijaliteti</h2>
+                <p class="section-subtitle">Jela koja naši gosti najviše vole</p>
+            </div> 
+            <div class="specialties-grid" id="specialtiesGrid">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-utensils"></i>
+                        <span class="logo-text">Mediterraneo</span>
+                    </a>
+                    <p class="footer-about">Autentični mediteranski restoran koji nudi vrhunsko iskustvo uz tradicionalne recepte i sveže namirnice.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Radno Vreme</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-clock"></i> Ponedeljak - Petak: 12:00 - 23:00</li>
+                        <li><i class="fas fa-clock"></i> Subota - Nedelja: 12:00 - 24:00</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Brzi Linkovi</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="about.html">O nama</a></li>
+                        <li><a href="menu.html">Meni</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li><a href="author.html">Autor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Restoran Mediterraneo. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

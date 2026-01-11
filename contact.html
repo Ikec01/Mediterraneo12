@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Mediterraneo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/contact.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                <span class="logo-text">Mediterraneo</span>
+            </a>            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i> Početna</a></li>
+                <li class="nav-item"><a href="about.html"><i class="fas fa-info-circle"></i> O nama</a></li>
+                <li class="nav-item"><a href="menu.html"><i class="fas fa-utensils"></i> Meni</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active"><i class="fas fa-envelope"></i> Kontakt</a></li>
+                <li class="nav-item"><a href="author.html"><i class="fas fa-user"></i> Autor</a></li>
+                <li class="nav-item"><a href="downloads/Mediterraneo1.zip" download><i class="fa-solid fa-download"></i> Zip</a></li>
+                <li class="nav-item"><a href="downloads/dokumentacija.pdf" download><i class="fa-solid fa-download"></i> Doc</a></li>
+            </ul>            
+            <div class="nav-cta">
+                <a href="contact.html#reservation" class="btn btn-primary">Rezervišite</a>
+            </div>           
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="page-hero contact-hero">
+        <div class="page-hero-content container">
+            <h1 class="page-hero-title">Kontaktirajte Nas</h1>
+            <p class="page-hero-subtitle">Pišite nam ili pozovite za rezervaciju</p>
+        </div>
+    </section>
+    <section class="section contact-page-section">
+        <div class="container">
+            <div class="contact-page-grid">
+                <div class="contact-info-card">
+                    <h2 class="contact-title">Informacije</h2>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Adresa</h3>
+                            <p>Bulevar Mediterana 25<br>11000 Beograd</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telefon</h3>
+                            <p>+381 11 234 5678</p>
+                            <p>+381 64 123 4567 (rezervacije)</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@mediterraneo.rs</p>
+                            <p>rezervacije@mediterraneo.rs</p>
+                        </div>
+                    </div>                   
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Radno Vreme</h3>
+                            <p>Ponedeljak - Petak: 12:00 - 23:00</p>
+                            <p>Subota - Nedelja: 12:00 - 24:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-card" id="reservation">
+                    <div class="form-header">
+                        <h2 class="form-title">Rezervišite Sto</h2>
+                        <p class="form-subtitle">Popunite formu i mi ćemo vas kontaktirati za potvrdu</p>
+                    </div>                   
+                    <form id="reservationForm" class="modern-form">
+                        <div class="form-group floating-label">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">
+                                <i class="fas fa-user"></i>
+                                <span>Ime i prezime *</span>
+                            </label>
+                            <div class="error-message" id="nameError"></div>
+                        </div>                        
+                        <div class="form-group floating-label">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email adresa *</span>
+                            </label>
+                            <div class="error-message" id="emailError"></div>
+                        </div>                      
+                        <div class="form-group floating-label">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">
+                                <i class="fas fa-phone"></i>
+                                <span>Broj telefona *</span>
+                            </label>
+                            <div class="error-message" id="phoneError"></div>
+                        </div>                      
+                        <div class="form-row">
+                            <div class="form-group floating-label">
+                                <input type="date" id="date" name="date" required>
+                                <label for="date" class="active">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Datum *</span>
+                                </label>
+                                <div class="error-message" id="dateError"></div>
+                            </div>                           
+                            <div class="form-group floating-label select-group">
+                                <select id="time" name="time" required>
+                                    <option value=""></option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="22:00">22:00</option>
+                                </select>
+                                <label for="time">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Vreme *</span>
+                                </label>
+                                <div class="error-message" id="timeError"></div>
+                            </div>
+                        </div>                       
+                        <div class="form-group floating-label select-group">
+                            <select id="guests" name="guests" required>
+                                <option value=""></option>
+                                <option value="1">1 osoba</option>
+                                <option value="2">2 osobe</option>
+                                <option value="3">3 osobe</option>
+                                <option value="4">4 osobe</option>
+                                <option value="5">5+ osoba</option>
+                            </select>
+                            <label for="guests">
+                                <i class="fas fa-users"></i>
+                                <span>Broj gostiju *</span>
+                            </label>
+                            <div class="error-message" id="guestsError"></div>
+                        </div>                      
+                        <div class="form-group">
+                            <label for="message" class="textarea-label">
+                                <i class="fas fa-comment"></i>
+                                Posebni zahtevi (opciono)
+                            </label>
+                            <textarea id="message" name="message" rows="4" placeholder="Imate li neke posebne zahteve?"></textarea>
+                        </div>                       
+                        <button type="submit" class="btn btn-primary btn-block btn-submit">
+                            <i class="fas fa-paper-plane"></i> Pošaljite rezervaciju
+                        </button>
+                    </form>                   
+                    <div class="form-result" id="formResult"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-utensils"></i>
+                        <span class="logo-text">Mediterraneo</span>
+                    </a>
+                    <p class="footer-about">Autentični mediteranski restoran koji nudi vrhunsko iskustvo uz tradicionalne recepte i sveže namirnice.</p>
+                </div>                
+                <div class="footer-col">
+                    <h3 class="footer-title">Radno Vreme</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-clock"></i> Ponedeljak - Petak: 12:00 - 23:00</li>
+                        <li><i class="fas fa-clock"></i> Subota - Nedelja: 12:00 - 24:00</li>
+                    </ul>
+                </div>               
+                <div class="footer-col">
+                    <h3 class="footer-title">Brzi Linkovi</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="about.html">O nama</a></li>
+                        <li><a href="menu.html">Meni</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li><a href="author.html">Autor</a></li>
+                    </ul>
+                </div>
+            </div>           
+            <div class="footer-bottom">
+                <p>&copy; 2023 Restoran Mediterraneo. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meni | Mediterraneo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/menu.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                <span class="logo-text">Mediterraneo</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html"><i class="fas fa-home"></i> Početna</a></li>
+                <li class="nav-item"><a href="about.html"><i class="fas fa-info-circle"></i> O nama</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link active"><i class="fas fa-utensils"></i> Meni</a></li>
+                <li class="nav-item"><a href="contact.html"><i class="fas fa-envelope"></i> Kontakt</a></li>
+                <li class="nav-item"><a href="author.html"><i class="fas fa-user"></i> Autor</a></li>
+                <li class="nav-item"><a href="downloads/Mediterraneo1.zip" download><i class="fa-solid fa-download"></i> Zip</a></li>
+                <li class="nav-item"><a href="downloads/dokumentacija.pdf" download><i class="fa-solid fa-download"></i> Doc</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="contact.html#reservation" class="btn btn-primary">Rezervišite</a>
+            </div>            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="page-hero menu-hero">
+        <div class="page-hero-content container">
+            <h1 class="page-hero-title">Naš Meni</h1>
+            <p class="page-hero-subtitle">Istražite autentične mediteranske ukuse</p>
+        </div>
+    </section>
+    <section class="section menu-page-section">
+        <div class="container">
+            <div class="menu-filter" id="menuFilter">
+                <button class="filter-btn active" data-filter="all">Sva Jela</button>
+                <button class="filter-btn" data-filter="predjela">Predjela</button>
+                <button class="filter-btn" data-filter="glavna">Glavna Jela</button>
+                <button class="filter-btn" data-filter="deserti">Deserti</button>
+                <button class="filter-btn" data-filter="pica">Pića</button>
+            </div>
+            <div class="menu-items-container" id="menuItemsContainer">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-utensils"></i>
+                        <span class="logo-text">Mediterraneo</span>
+                    </a>
+                    <p class="footer-about">Autentični mediteranski restoran koji nudi vrhunsko iskustvo uz tradicionalne recepte i sveže namirnice.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Radno Vreme</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-clock"></i> Ponedeljak - Petak: 12:00 - 23:00</li>
+                        <li><i class="fas fa-clock"></i> Subota - Nedelja: 12:00 - 24:00</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Brzi Linkovi</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Početna</a></li>
+                        <li><a href="about.html">O nama</a></li>
+                        <li><a href="menu.html">Meni</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li><a href="author.html">Autor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Restoran Mediterraneo. Sva prava zadržana.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
